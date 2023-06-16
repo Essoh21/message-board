@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div 
+    h1= title
+    p Welcome to #{title}
+  .messageboard 
+    each message in messages 
+      div
+        span= message.user+': '
+        span= message.text 
+
