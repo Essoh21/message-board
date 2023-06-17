@@ -1,8 +1,53 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  font-family: "Charmonman", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+  box-sizing: border-box;
+  background-color: #fcf8f8;
 }
 
-a {
-  color: #00B7FF;
+.messageboard {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+.message {
+  padding: 0.3rem auto;
+}
+.message:nth-child(odd) {
+  background-color: white;
+  margin: 1rem auto;
+  font-weight: 700;
+}
+form {
+  max-width: 20rem;
+  margin: 1rem auto;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+label {
+  display: inline-block;
+  width: 7rem;
+  text-align: right;
+  margin-right: 0.4rem;
+}
+input[type="text"] {
+  padding: 1px 0.5rem;
+  font-size: medium;
+}
+
+button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  margin-top: 1rem;
 }

@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+
+    h1=title 
+    form(action='/new' method='POST' autocomplete=true)
+        div(class='name container')
+            label(for='user') your name : 
+            input(type='text' name='user' id="user" value='' )
+        div(class='text container')
+            label(for="message")  message : 
+            input(type="text" name='message' id='message' value='' )
+        button Submit 
